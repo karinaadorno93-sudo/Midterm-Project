@@ -1,1 +1,5 @@
+“Evaluating Logistic Regression, SVM, KNN, and Ensemble Models for Accurate Heart Disease Risk Prediction"
 
+compares six supervised machine learning algorithms to classify patients 
+according to the presence or absence of heart disease. 
+It uses clinical measurements from the Cleveland Heart Disease dataset.
