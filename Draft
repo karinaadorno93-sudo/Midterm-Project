@@ -3,3 +3,54 @@
 compares six supervised machine learning algorithms to classify patients 
 according to the presence or absence of heart disease. 
 It uses clinical measurements from the Cleveland Heart Disease dataset.
+
+1.Source: Cleveland Heart Disease dataset, UCI Machine Learning Repository.
+
+2.Original sample size: 303 patient records. The final number after cleaning is not clearly reported.
+
+3.Variables used: 	14 variables: 13 predictors and 1 target, selected from the original collection of 76 attributes.
+
+4. Target variable: 	Binary: 0 = absence of heart disease; 1 = presence of heart disease, as described in the paper.
+
+5.Data structure: Tabular clinical data containing numerical and categorical variables.
+
+6. Missing values: Reported in variables including thal and ca
+
+7. Class distribution: The numbers of patients in each target class are not clearly reported.
+
+The 13 predictors are: 
+ Variable      Meaning 
+
+`age`          Patient’s age
+`sex`          Sex 
+`cp`           Chest pain type 
+`trestbps      Resting blood pressure
+ `chol`         Serum cholesterol 
+`fbs`          Whether fasting blood sugar exceeds 120 mg/dL 
+`restecg`      Resting electrocardiogram results
+`thalach`      Maximum heart rate achieved
+`exang`        Exercise-induced angina
+`oldpeak`      ST depression induced by exercise
+`slope`        Slope of the exercise ST segment
+`ca`           Number of major vessels
+`thal`         Defect category: normal, fixed defect, or reversible defect
+
+Methodology
+
+The study was implemented in Python 3.8 using the following approach:
+1. Data cleaning: The authors checked for missing values. They specifically report removing records with missing thal or ca values. Other missing-value handling is described generally as removal or imputation, without a complete specification.
+2. Categorical encoding: Variables such as cp and thal were converted into numerical codes using label encoding.
+3. Outlier assessment: Boxplots were used to examine variables such as cholesterol and resting blood pressure. Extreme observations were retained because they could represent meaningful clinical cases.
+4. Feature scaling: Numerical variables were transformed using Min–Max normalization to a reported range of 0–10.
+5. Training and testing: The preprocessed dataset was divided into 80% training data and 20% test data.
+6. Model development: Six classifiers were trained:
+   - Logistic Regression
+   - Support Vector Machine
+   - K-Nearest Neighbors
+   - Decision Tree
+   - Random Forest
+   - Gradient Boosting
+7. Hyperparameter tuning: The authors report using GridSearchCV and six-fold cross-validation to select model settings. However, the complete search grids and the precise relationship between cross-validation and the held-out test set are not documented.
+8. Evaluation: Performance was assessed using accuracy, precision, recall, F1-score, and ROC-AUC.
+
+
