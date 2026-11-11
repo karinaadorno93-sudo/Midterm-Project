@@ -1,5 +1,9 @@
 # Heart Disease Prediction — Machine Learning Model Comparison
 
+## Project Team
+
+Felipe Kuerten Neves · Karina Adorno · Carlos Alvarez
+
 ## About the Project
 
 This DS 301 Machine Learning midterm project reproduces and evaluates selected methods from Aldila and Supriyono (2026), *Evaluating Logistic Regression, SVM, KNN, and Ensemble Models for Accurate Heart Disease Risk Prediction*. We compare four supervised classification algorithms—Logistic Regression, K-Nearest Neighbors (KNN), Support Vector Machine (SVM), and Decision Tree—using the Cleveland Heart Disease dataset.
@@ -130,6 +134,4 @@ This experiment demonstrates the importance of selecting evaluation metrics base
 
 Aldila & Supriyono (2026). *Evaluating Logistic Regression, SVM, KNN, and Ensemble Models for Accurate Heart Disease Risk Prediction*. https://doi.org/10.33480/jitk.v11i3.6738
 
-## Project Team
 
-Felipe Kuerten Neves · Karina Adorno · Carlos Alvarez
